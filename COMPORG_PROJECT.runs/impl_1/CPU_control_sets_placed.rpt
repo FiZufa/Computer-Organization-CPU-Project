@@ -1,0 +1,109 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Jun  1 22:40:58 2023
+| Host         : Fitria_Zu running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_control_sets_placed.rpt
+| Design       : CPU
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |    44 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              59 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              85 |           30 |
+| Yes          | No                    | No                     |              32 |           13 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1028 |          450 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------+------------------------------+---------------------------------------------+------------------+----------------+
+|                      Clock Signal                      |         Enable Signal        |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++--------------------------------------------------------+------------------------------+---------------------------------------------+------------------+----------------+
+|  ifetch/writesyscall1_out                              |                              |                                             |                1 |              1 |
+|  cpuclock/inst/clk_out1                                |                              |                                             |                2 |              3 |
+|  mileage_record/clkdiv_generator/refreshcounter_reg[0] |                              |                                             |                2 |              4 |
+| ~freqdiv/xlnx_opt_                                     |                              |                                             |                3 |              4 |
+| ~freqdiv/xlnx_opt_                                     | ifetch/PC[31]_i_1_n_0        | rst_IBUF                                    |                2 |              4 |
+|  ifetch/E[0]                                           |                              |                                             |                2 |              5 |
+|  mileage_record/seven_seg/Refreshcounter_wrapper/E[0]  |                              |                                             |                2 |              8 |
+| ~freqdiv/xlnx_opt_                                     |                              | rst_IBUF                                    |               15 |             26 |
+|  cpuclock/inst/clk_out1                                |                              | freqdiv/clear                               |                7 |             28 |
+|  cpuclock/inst/clk_out1                                |                              | mileage_record/clkdiv_generator/divided_clk |                8 |             31 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[21][31]_i_1_n_0 | rst_IBUF                                    |               12 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[22][31]_i_1_n_0 | rst_IBUF                                    |               18 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[23][31]_i_1_n_0 | rst_IBUF                                    |               19 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[14][31]_i_1_n_0 | rst_IBUF                                    |               10 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[1][31]_i_1_n_0  | rst_IBUF                                    |               10 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[0][31]_i_1_n_0  | rst_IBUF                                    |               12 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[11][31]_i_1_n_0 | rst_IBUF                                    |               12 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[10][31]_i_1_n_0 | rst_IBUF                                    |                7 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[12][31]_i_1_n_0 | rst_IBUF                                    |                9 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[13][31]_i_1_n_0 | rst_IBUF                                    |                6 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[16][31]_i_1_n_0 | rst_IBUF                                    |               11 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[19][31]_i_1_n_0 | rst_IBUF                                    |               15 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[17][31]_i_1_n_0 | rst_IBUF                                    |               16 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[20][31]_i_1_n_0 | rst_IBUF                                    |               16 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[8][31]_i_1_n_0  | rst_IBUF                                    |               12 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[28][31]_i_1_n_0 | rst_IBUF                                    |               12 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[7][31]_i_1_n_0  | rst_IBUF                                    |               24 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[26][31]_i_1_n_0 | rst_IBUF                                    |               12 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[30][31]_i_1_n_0 | rst_IBUF                                    |               19 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[5][31]_i_1_n_0  | rst_IBUF                                    |               13 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[24][31]_i_1_n_0 | rst_IBUF                                    |               17 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[27][31]_i_1_n_0 | rst_IBUF                                    |               15 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[2][31]_i_1_n_0  | rst_IBUF                                    |               11 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[4][31]_i_1_n_0  | rst_IBUF                                    |               14 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[9][31]_i_1_n_0  | rst_IBUF                                    |               20 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[25][31]_i_1_n_0 | rst_IBUF                                    |               11 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[29][31]_i_1_n_0 | rst_IBUF                                    |               16 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[31][31]_i_1_n_0 | rst_IBUF                                    |               21 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[3][31]_i_1_n_0  | rst_IBUF                                    |                9 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[6][31]_i_1_n_0  | rst_IBUF                                    |               17 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[15][31]_i_1_n_0 | rst_IBUF                                    |               17 |             32 |
+|  freqdiv/xlnx_opt_                                     | decoder/Regs[18][31]_i_1_n_0 | rst_IBUF                                    |               15 |             32 |
+| ~freqdiv/xlnx_opt_                                     | ifetch/link_addr[31]_i_1_n_0 |                                             |               13 |             32 |
+|  freqdiv/xlnx_opt_                                     |                              |                                             |                9 |             34 |
++--------------------------------------------------------+------------------------------+---------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 3      |                     1 |
+| 4      |                     3 |
+| 5      |                     1 |
+| 8      |                     1 |
+| 16+    |                    37 |
++--------+-----------------------+
+
+
