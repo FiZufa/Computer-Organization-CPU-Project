@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../COMPORG_PROJECT.srcs/sources_1/ip/cpuclk" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/ip/RAM/sim/RAM.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/ip/cpuclk/cpuclk.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/sevenseg/BCD_ctrl.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/sevenseg/BCD_to_Cathodes.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/new/Ifetc32.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/sevenseg/anode_ctrl.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/sevenseg/clock_divider_mileage.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/new/control32.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/new/decode32.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/new/dmemory32.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/new/executs32.v" \
+"../../../../COMPORG_PROJECT.srcs/sim_1/new/freqdiv.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/sevenseg/refreshcounter.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/sevenseg/seven_seg_controller.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/sevenseg/top_mileage.v" \
+"../../../../COMPORG_PROJECT.srcs/sources_1/new/CPU.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

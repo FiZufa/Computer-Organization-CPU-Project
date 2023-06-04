@@ -1,0 +1,40 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 02a9ca63b0a840e9b32dd4376b1fa1eb --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpuclk_tb_behav xil_defaultlib.cpuclk_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 3 for port clk_div [D:/COMPORG_PROJECT_backup/COMPORG_PROJECT.srcs/sources_1/sevenseg/seven_seg_controller.v:32]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.prgrom
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.decode32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.executs32
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.clock_divider(div_value=2300)
+Compiling module xil_defaultlib.refreshcounter
+Compiling module xil_defaultlib.anode_ctrl
+Compiling module xil_defaultlib.BCD_ctrl
+Compiling module xil_defaultlib.BCD_to_Cathodes
+Compiling module xil_defaultlib.seven_seg_controller
+Compiling module xil_defaultlib.top_segment
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.cpuclk_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpuclk_tb_behav
